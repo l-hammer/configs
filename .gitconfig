@@ -1,6 +1,6 @@
 [user]
-    name  = "Jerry Yang"
-    email = "hy0kle@gmail.com"
+    name  = "LHammer"
+    email = "lhammering@gmail.com"
 
 [merge]
     summary = true
@@ -124,4 +124,4 @@
 
 [push]
     # nothing, matching, upstream, simple, current
-    default = simple
+    default = current
