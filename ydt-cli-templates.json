@@ -1,7 +1,12 @@
 {
-  "YDTemplate": {
-    "type": "wx/h5/web",
-    "template": "l-hammer/YDTemplate",
-    "message": "A Flexible Template of Parcel + Vue/jQuery + Hot-reload + Node proxy/Mock data."
-  }
+  "code": 0,
+  "message": "success",
+  "templates": [
+    {
+      "type": "wx/h5/web",
+      "name": "YDTemplate",
+      "template": "l-hammer/YDTemplate",
+      "description": "A Flexible Template of Parcel + Vue/jQuery + Hot-reload + Node proxy/Mock data."
+    }
+  ]
 }
