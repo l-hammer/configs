@@ -3,8 +3,10 @@
   "message": "success",
   "templates": [
     {
-      "type": "wx/h5/web",
       "name": "YDTemplate",
+      "type": "wx/h5/web",
+      "release": "v1.2.0",
+      "author": "LHammer",
       "template": "l-hammer/YDTemplate",
       "description": "A Flexible Template of Parcel + Vue/jQuery + Hot-reload + Node proxy/Mock data."
     }
