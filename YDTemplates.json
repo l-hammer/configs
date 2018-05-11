@@ -1,0 +1,7 @@
+{
+  "YDTemplate": {
+    "type": "wx/h5/web",
+    "template": "l-hammer/YDTemplate",
+    "message": "A Flexible Template of Parcel + Vue/jQuery + Hot-reload + Node proxy/Mock data."
+  }
+}
