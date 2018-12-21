@@ -1,6 +1,6 @@
 [user]
     name  = "LHammer"
-    email = "lhammering@gmail.com"
+    email = "lhammmmmer@gmail.com"
 
 [merge]
     summary = true
@@ -18,13 +18,13 @@
     command = exiftool
 
 [color]
-     diff   = always
-     branch = auto
-     interactive = auto
-     grep = auto
-     status = true
-     showbranch = auto
-     ui = true
+    diff   = always
+    branch = auto
+    interactive = auto
+    grep = auto
+    status = true
+    showbranch = auto
+    ui = true
 
 [color "diff"]
     meta = magenta black bold
@@ -48,14 +48,17 @@
     # 日志操作简化,并将日志格式化
     who = shortlog -n -s --no-merges
     lg  = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    rlg = reflog show --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset'
     lp  = log --color --pretty=oneline --abbrev-commit --graph --decorate
     lns = log --color --name-status --date=iso
     lst = log --color --stat --date=iso
     ldi = log --color --date=iso
     ldp = log --color --date=iso -p
     ls  = log --oneline
+
     # 最新一条 commit log 摘要
     l1  = !git --no-pager log --max-count=1 --date=iso
+
     # 最后一次提交的 hash 串
     lh  = rev-parse HEAD
 
@@ -63,7 +66,9 @@
     ci = commit
     co = checkout
     st = status
+
     # 查看远程分支,远程分支会用红色表示出来
+    br = branch
     ba = branch -a
     bv = branch -v
     bm = branch -m
@@ -77,9 +82,11 @@
     df = diff
     rv = remote -v
     fa = fetch --all
+
     # 刻意地创造提交线图分叉
     mnf = merge --no-ff
     rso = remote show origin
+
     # 清除除在本地有但在远程库中已经不存在的分支 git fetch -p
     rpo = remote prune origin
 
@@ -92,12 +99,16 @@
 
     # To list untracked files
     ut = ls-files --other --exclude-standard
+
     # list tracked files
     tf = ls-files
+
     # show modified files
     lm = ls-files -m
+
     # show deleted files
     ld = ls-files -d
+
     # show unmerged files
     lu = ls-files -u
 
@@ -113,6 +124,9 @@
     sp = stash pop
     sl = stash list
 
+    # 查看数据内容类型
+    dump = cat-file -p
+
 [core]
     # 对 0x80以上的字符不进行quote,以正常显示中文
     quotepath = false
@@ -125,3 +139,7 @@
 [push]
     # nothing, matching, upstream, simple, current
     default = current
+
+[pull]
+    # pull --rebase
+    rebase = true
